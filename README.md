@@ -74,8 +74,11 @@ Em breve: prints da tela de login, mapa, ranking...
 🌐 Versão Web
 
 👨‍💻 Desenvolvedor
-Gabriel Cortes Te4ixeira
+
+Gabriel Cortes Teixeira
+
 📧 gcortesteixeira@gmail.com
+
 🔗 https://www.linkedin.com/in/gabriel-cortes-teixeira-0b9a4722b/
 
 
