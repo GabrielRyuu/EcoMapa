@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ecomap</groupId>
+    <artifactId>ecomap</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- JxBrowser Core -->
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-8.5.2.jar</systemPath>
+        </dependency>
+
+        <!-- Swing Integration -->
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser-swing</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-swing-8.5.2.jar</systemPath>
+        </dependency>
+
+        <!-- Chromium (nativos do win64) -->
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser-chromium</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-win64-8.5.2.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.teamdev.jxbrowser.frame</groupId>
+            <artifactId>jxbrowser</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-win64-8.5.2.jar</systemPath>
+        </dependency>
+        <!-- Outros módulos (JavaFX, SWT, Compose) se necessário -->
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser-javafx</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-javafx-8.5.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser-swt</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-swt-8.5.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.teamdev.jxbrowser</groupId>
+            <artifactId>jxbrowser-compose</artifactId>
+            <version>8.5.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jxbrowser-compose-8.5.2.jar</systemPath>
+        </dependency>
+
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+
+        <!-- SLF4J for logging (usado pelo JxBrowser) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+
+        <!-- MigLayout (para layout moderno no Swing) -->
+        <dependency>
+            <groupId>com.miglayout</groupId>
+            <artifactId>miglayout-swing</artifactId>
+            <version>5.3</version>
+        </dependency>
+
+        <!-- Lombok (opcional para facilitar getters/setters) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
