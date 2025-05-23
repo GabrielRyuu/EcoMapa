@@ -70,7 +70,7 @@ public class TelaMapa extends JFrame {
         sidePanel.add(txtSearch);
         sidePanel.add(btnSearch);
 
-        // Removido: btnAdd
+        
         JButton btnRank = new JButton("Ver Ranking");
         JButton btnBusca = new JButton("Buscar Locais");
         sidePanel.add(btnRank);
@@ -193,7 +193,7 @@ public class TelaMapa extends JFrame {
         engine.close();
     }
 
-    /** Ponte Java ↔ JavaScript para adicionar/remover plantio */
+   
     @JsAccessible
     public static class PlantioBridge {
         private final String usuario;
