@@ -56,7 +56,27 @@ Editar
    cd ecomap-desktop
 Importe no IntelliJ ou Eclipse como projeto Maven (ou configure manualmente o classpath com JXMapViewer e MySQL Connector).
 
-Configure o banco MySQL e atualize os parâmetros de conexão na classe DatabaseUtil.java.
+Configure o banco MySQL e atualize os parâmetros de conexão na classe Database.java.
+
+Estrutura do banco: 
+CREATE DATABASE ecomap;
+USE ecomap;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE plantings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    latitude DOUBLE,
+    longitude DOUBLE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
 
 Execute a classe LoginScreen.java ou MapScreen.java.
 
